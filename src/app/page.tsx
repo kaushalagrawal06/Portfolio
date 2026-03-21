@@ -3,6 +3,9 @@
 import { PERSONAL_INFO, SKILLS, PROJECTS, EXPERIENCE, EDUCATION } from '@/lib/constants'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import ResumeTimeline from '@/components/ResumeTimeline'
+import EducationTimeline from '@/components/EducationTimeline'
+import SkillChips from '@/components/SkillChips'
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -34,7 +37,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-blue-600">{PERSONAL_INFO.name}</h1>
           <div className="flex gap-8">
-            {['about', 'experience', 'projects', 'contact'].map((item) => (
+            {['about', 'resume', 'projects', 'contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}
@@ -141,43 +144,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="py-20 px-6 max-w-6xl mx-auto">
-        <h3 className="text-4xl font-bold mb-12 text-gray-900">Experience</h3>
-        <div className="space-y-6">
-          {EXPERIENCE.map((exp, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white border-l-4 border-blue-600 p-6 rounded-lg shadow-md hover:shadow-lg transition"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h4 className="text-2xl font-bold text-gray-900">{exp.title}</h4>
-                  <p className="text-blue-600 font-semibold">{exp.company}</p>
-                  <p className="text-gray-600">{exp.location}</p>
-                </div>
-                <span className="text-gray-600 font-medium text-sm">{exp.period}</span>
-              </div>
-              <p className="text-gray-700 mb-4">{exp.description}</p>
-              <div className="grid md:grid-cols-2 gap-2 mb-4">
-                {exp.highlights.map((highlight, i) => (
-                  <p key={i} className="text-gray-700 flex items-center gap-2">
-                    <span className="text-blue-600">✓</span> {highlight}
-                  </p>
-                ))}
-              </div>
-              <div className="flex gap-2 flex-wrap">
-                {exp.tech.map((tech, i) => (
-                  <span key={i} className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+      {/* Resume Section */}
+      <section id="resume" className="py-20 px-6 max-w-6xl mx-auto">
+        <h3 className="text-4xl font-bold mb-14 text-gray-900">Resume</h3>
+
+        {/* Work Experience */}
+        <div className="mb-14">
+          <h4 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+            <span className="inline-block w-1 h-7 bg-blue-600 rounded-full" />
+            Work Experience
+          </h4>
+          <ResumeTimeline items={EXPERIENCE} />
+        </div>
+
+        {/* Education */}
+        <div className="mb-14">
+          <h4 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+            <span className="inline-block w-1 h-7 bg-blue-600 rounded-full" />
+            Education
+          </h4>
+          <EducationTimeline items={EDUCATION} />
+        </div>
+
+        {/* Skills */}
+        <div>
+          <h4 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+            <span className="inline-block w-1 h-7 bg-blue-600 rounded-full" />
+            Skills
+          </h4>
+          <SkillChips groups={SKILLS} />
         </div>
       </section>
 
@@ -211,52 +206,6 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section id="skills" className="py-20 px-6 max-w-6xl mx-auto">
-        <h3 className="text-4xl font-bold mb-12 text-gray-900">Skills</h3>
-        <div className="grid md:grid-cols-3 gap-6">
-          {SKILLS.map((skillGroup, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-600"
-            >
-              <div className="text-4xl mb-4">{skillGroup.icon}</div>
-              <h4 className="text-xl font-bold text-gray-900 mb-4">{skillGroup.category}</h4>
-              <div className="space-y-2">
-                {skillGroup.skills.map((skill, i) => (
-                  <p key={i} className="text-gray-700">• {skill}</p>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Education Section */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-4xl font-bold mb-12 text-gray-900">Education</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {EDUCATION.map((edu, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-600"
-              >
-                <p className="text-sm text-blue-600 font-semibold mb-2">{edu.year}</p>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">{edu.degree}</h4>
-                <p className="text-gray-700">{edu.school}</p>
               </motion.div>
             ))}
           </div>
