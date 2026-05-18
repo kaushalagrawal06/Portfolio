@@ -78,70 +78,70 @@ type FormStatus = "idle" | "sending" | "success" | "error";
 const featuredWork: Record<Locale, FeaturedWork[]> = {
   en: [
     {
-      title: "DACH AI Job Agent",
-      impact: "Auto-sourcing to application",
+      title: "Business Process Mapping",
+      impact: "Requirements to implementation-ready workflows",
       image: "/images/kaushal-main.jpg",
       alt: "Kaushal Agrawal portrait in grayscale editorial treatment",
       summary:
-        "Built an n8n workflow that scrapes jobs, scores resume fit, drafts tailored cover letters, and routes applications with tracker logging for every step.",
-      meta: "Case 01 / Workflow Automation",
+        "Translated unclear operational needs into process maps, user stories, acceptance criteria, and Jira/Confluence-ready documentation for faster team execution.",
+      meta: "Case 01 / Business Analysis",
       aspect: "portrait",
       offset: "",
     },
     {
-      title: "Market Research Prediction Engine",
-      impact: "2h signal-to-forecast cycle",
+      title: "Reporting & Procurement Visibility",
+      impact: "Excel / Power BI / SAP-ERP context",
       image: "/images/background.png",
       alt: "Industrial travel scene used as a brutalist project visual",
       summary:
-        "Designed a multi-step AI workflow that ingests WhatsApp market signals, enriches them with approved web and macro sources, and returns citation-aware forecasts with confidence gates.",
-      meta: "Case 02 / AI Intelligence",
+        "Structured supplier, cost, and purchasing data into clearer reporting flows so operational decisions become easier to compare, explain, and improve.",
+      meta: "Case 02 / Reporting",
       aspect: "offset",
       offset: "product-card-offset",
     },
     {
-      title: "Trade Fair Lead Engine",
-      impact: "Cold outreach on autopilot",
+      title: "International Coordination Desk",
+      impact: "Trade, stakeholders, public-sector workflow",
       image: "/images/hiking.jpg",
       alt: "High-contrast outdoor image representing global movement and field execution",
       summary:
-        "Connected buyer scraping, Google Sheets tracking, personalized email generation, and nurture sequencing into one outbound system for B2B lead generation.",
-      meta: "Case 03 / Growth Systems",
+        "Managed business leads, trade documentation, and stakeholder communication across Germany-facing initiatives with a focus on clarity and follow-through.",
+      meta: "Case 03 / Coordination",
       aspect: "landscape",
       offset: "",
     },
   ],
   de: [
     {
-      title: "DACH AI Job Agent",
-      impact: "Von Sourcing bis Bewerbung automatisiert",
+      title: "Business Process Mapping",
+      impact: "Von Anforderungen zu umsetzbaren Workflows",
       image: "/images/kaushal-main.jpg",
       alt: "Kaushal Agrawal portrait in grayscale editorial treatment",
       summary:
-        "Ein klarer Entscheidungsrhythmus für Exportpriorisierung mit Market Scoring, Reporting-Disziplin und operativer Umsetzung.",
-      meta: "Case 01 / Strategie",
+        "Unklare operative Anforderungen in Prozessmaps, User Stories, Akzeptanzkriterien und Jira/Confluence-faehige Dokumentation uebersetzt.",
+      meta: "Case 01 / Business Analyse",
       aspect: "portrait",
       offset: "",
     },
     {
-      title: "Cost Compression Program",
-      impact: "-20% operative Kosten",
+      title: "Reporting & Procurement Visibility",
+      impact: "Excel / Power BI / SAP-ERP Kontext",
       image: "/images/background.png",
       alt: "Industrial travel scene used as a brutalist project visual",
       summary:
-        "Procurement- und Finance-Reviews in ein gemeinsames Operating Model überführt, um Kosten schneller sichtbar und steuerbar zu machen.",
-      meta: "Case 02 / Finance",
+        "Lieferanten-, Kosten- und Einkaufsdaten in klarere Reporting-Flows strukturiert, damit Entscheidungen vergleichbarer und steuerbarer werden.",
+      meta: "Case 02 / Reporting",
       aspect: "offset",
       offset: "product-card-offset",
     },
     {
-      title: "Trade Control Console",
-      impact: "EU / Nahost / Asien",
+      title: "International Coordination Desk",
+      impact: "Trade, Stakeholder, Public-Sector Workflow",
       image: "/images/hiking.jpg",
       alt: "High-contrast outdoor image representing global movement and field execution",
       summary:
-        "Compliance-nahe Workflows, Lieferantenkoordination und Reporting-Checkpoints in eine saubere Trade-Execution-Struktur gebracht.",
-      meta: "Case 03 / Operations",
+        "Business Leads, Trade-Dokumentation und Stakeholder-Kommunikation fuer Deutschland-bezogene Initiativen sauber koordiniert.",
+      meta: "Case 03 / Koordination",
       aspect: "landscape",
       offset: "",
     },
@@ -155,7 +155,7 @@ const experience: Record<Locale, ExperienceItem[]> = {
       role: "Business Consultant",
       company: "HORBACH",
       detail:
-        "Driving AI advisory, workflow design, and financial decision support with automation ideas that move from concept to measurable operating systems.",
+        "Prepared business planning, reporting, and financial decision support with structured client communication and measurable operating discipline.",
     },
     {
       period: "Apr 2024 / Jul 2024",
@@ -163,6 +163,13 @@ const experience: Record<Locale, ExperienceItem[]> = {
       company: "Consulate General of India",
       detail:
         "Supported bilateral business coordination, trade reporting, and market intelligence across Germany-facing initiatives.",
+    },
+    {
+      period: "Oct 2023 / Dec 2023",
+      role: "Student Representative",
+      company: "Deggendorf Institute of Technology",
+      detail:
+        "Represented student interests, coordinated feedback, and supported communication between international students and university stakeholders.",
     },
     {
       period: "May 2023 / Oct 2023",
@@ -176,7 +183,14 @@ const experience: Record<Locale, ExperienceItem[]> = {
       role: "Business Analyst & Project Manager",
       company: "Adani Group",
       detail:
-        "Managed international trade analytics, forecasting inputs, and process reviews that now inform my AI-first approach to operational automation.",
+        "Managed business analysis, project tracking, forecasting inputs, and process reviews across operational and commercial workstreams.",
+    },
+    {
+      period: "Jan 2018 / Jun 2018",
+      role: "Remote Intern, Finance & Commodities Analyst",
+      company: "Bitpanda",
+      detail:
+        "Analyzed finance and commodities information remotely, building early exposure to market research, data interpretation, and investment context.",
     },
   ],
   de: [
@@ -185,28 +199,42 @@ const experience: Record<Locale, ExperienceItem[]> = {
       role: "Business Consultant",
       company: "HORBACH",
       detail:
-        "Verantwortlich für KI-nahe Beratung, Finanzanalyse und kommerzielle Entscheidungsvorbereitung mit messbarem Impact.",
+        "Business Planning, Reporting und finanzielle Entscheidungsvorbereitung mit strukturierter Kundenkommunikation und klarer Ergebnisorientierung.",
     },
     {
       period: "Apr 2024 / Jul 2024",
       role: "Working Student, Business Leads Management",
       company: "Consulate General of India",
       detail:
-        "Unterstützte bilaterale Wirtschaftskoordination, Trade-Reporting und Marktanalysen für Deutschland-bezogene Initiativen.",
+        "Unterstuetzte bilaterale Wirtschaftskoordination, Trade-Reporting und Marktanalysen fuer Deutschland-bezogene Initiativen.",
+    },
+    {
+      period: "Okt 2023 / Dez 2023",
+      role: "Student Representative",
+      company: "Deggendorf Institute of Technology",
+      detail:
+        "Vertretung studentischer Interessen, Feedback-Koordination und Kommunikation zwischen internationalen Studierenden und Hochschul-Stakeholdern.",
     },
     {
       period: "Mai 2023 / Okt 2023",
-      role: "Working Student, Einkäufer",
+      role: "Working Student, Einkauf",
       company: "Laumer GmbH",
       detail:
-        "Fokus auf Sourcing-Effizienz, Prozess-Tracking und Reporting-Qualität in der Beschaffung.",
+        "Fokus auf Sourcing-Effizienz, Prozess-Tracking und Reporting-Qualitaet in der Beschaffung.",
     },
     {
-      period: "Mär 2020 / Jan 2023",
+      period: "Maerz 2020 / Jan 2023",
       role: "Business Analyst & Project Manager",
       company: "Adani Group",
       detail:
-        "Steuerte internationale Trade-Analysen, Forecasting-Inputs und Prozessreviews für supply-chain-lastige Bereiche.",
+        "Business Analyse, Projekttracking, Forecasting-Inputs und Prozessreviews fuer operative und kommerzielle Workstreams gesteuert.",
+    },
+    {
+      period: "Jan 2018 / Jun 2018",
+      role: "Remote Intern, Finance & Commodities Analyst",
+      company: "Bitpanda",
+      detail:
+        "Finance- und Commodities-Informationen remote analysiert und fruehe Erfahrung in Marktrecherche, Datenauswertung und Investment-Kontext aufgebaut.",
     },
   ],
 };
@@ -214,12 +242,12 @@ const experience: Record<Locale, ExperienceItem[]> = {
 const education: Record<Locale, EducationItem[]> = {
   en: [
     {
-      period: "2025",
-      degree: "Master in Tourism Development",
+      period: "2026",
+      degree: "Master of Arts, International Tourism Development",
       school: "Deggendorf Institute of Technology",
       location: "Germany",
       detail:
-        "Master's degree listed on the resume under tourism development with a Germany-based academic track.",
+        "Graduate profile combining international business, tourism development, destination strategy, research, and stakeholder coordination.",
     },
     {
       period: "2019",
@@ -229,15 +257,23 @@ const education: Record<Locale, EducationItem[]> = {
       detail:
         "Built the business, management, and commercial foundation that now shapes the consulting and trade work.",
     },
+    {
+      period: "2015",
+      degree: "Certification in International Trade Management",
+      school: "Jaipur National University",
+      location: "Jaipur, India",
+      detail:
+        "Built additional grounding in export-import workflows, trade documentation, and international business fundamentals.",
+    },
   ],
   de: [
     {
-      period: "2025",
-      degree: "Master in Tourism Development",
+      period: "2026",
+      degree: "Master of Arts, International Tourism Development",
       school: "Deggendorf Institute of Technology",
       location: "Deutschland",
       detail:
-        "Master-Abschluss laut Lebenslauf mit Deutschland-bezogenem akademischem Fokus.",
+        "Masterprofil mit internationalem Business, Tourism Development, Destination Strategy, Research und Stakeholder-Koordination.",
     },
     {
       period: "2019",
@@ -245,7 +281,15 @@ const education: Record<Locale, EducationItem[]> = {
       school: "Jaipur National University",
       location: "Jaipur, Indien",
       detail:
-        "Fundament in Business und Management, das heute die Beratungs- und Trade-Arbeit prägt.",
+        "Fundament in Business und Management, das heute die Beratungs- und Trade-Arbeit praegt.",
+    },
+    {
+      period: "2015",
+      degree: "Certification in International Trade Management",
+      school: "Jaipur National University",
+      location: "Jaipur, Indien",
+      detail:
+        "Zusatzgrundlage in Export-Import-Workflows, Trade-Dokumentation und internationalem Business.",
     },
   ],
 };
@@ -278,31 +322,31 @@ const copy: Record<Locale, Copy> = {
       education: "Education",
       contact: "Contact",
     },
-    heroMetaLeft: "Season 04 / Munich / Germany",
-    heroMetaRight: "AI Workflows / n8n / Ops",
+    heroMetaLeft: "Season 04 / Bavaria / Germany",
+    heroMetaRight: "Business Analysis / Jira / Reporting",
     heroDeck:
-      "Brutalist portfolio for AI workflow design, n8n automation, business analysis, and operations systems that turn messy work into repeatable execution.",
-    heroPrimary: "Enter Archive",
+      "Modern brutalist portfolio for business analysis, digital process optimization, Jira/Confluence documentation, reporting, procurement, and international coordination.",
+    heroPrimary: "View Work",
     heroSecondary: "Download Resume",
     manifestoLabel: "Manifesto",
     manifesto: [
-      "I build AI workflow systems for teams that need sharper reporting, faster decisions, and less manual follow-up across operations, research, and outreach.",
-      "The work sits between business analysis and automation delivery, translating ambiguity into systems that can be scored, triggered, monitored, and improved.",
+      "I help teams turn unclear processes into structured workflows, useful reporting, and practical digital execution.",
+      "My profile sits between business analysis, process documentation, stakeholder communication, and digital tool adoption with Jira, Confluence, Excel, Power BI, and AI automation concepts.",
     ],
-    categoryTitle: "SELECTED PROJECTS",
+    categoryTitle: "SELECTED WORK",
     quickView: "Quick View",
     portfolioEdition: "Portfolio Edition",
     editorialKicker: "Editorial Ledger",
-    editorialTitle: "AI PROJECTS DESIGNED FOR REAL OPERATIONS",
+    editorialTitle: "BUSINESS ANALYSIS AND DIGITALIZATION FOR REAL OPERATIONS",
     editorialBody:
-      "These projects are built with an operator mindset: capture the signal, structure the decision, and deploy a workflow that still works under daily business pressure.",
+      "These selected works show my operating style: understand the process, document requirements, structure data, improve reporting, and introduce digital workflows that teams can actually use.",
     ledger: [
-      "n8n automation",
-      "AI agents",
-      "Job matching systems",
-      "Lead generation",
-      "Market forecasting",
-      "Operations design",
+      "Jira / Confluence",
+      "Business Analysis",
+      "Process Mapping",
+      "Reporting",
+      "Procurement Data",
+      "AI Automation Concepts",
     ],
     experienceTitle: "Experience",
     educationTitle: "Education",
@@ -310,13 +354,13 @@ const copy: Record<Locale, Copy> = {
       navigation: "Navigation",
       reach: "Reach",
       base: "Base",
-      availability: "Available for consulting, analytics, and trade-focused roles.",
+      availability: "Available for Business Analyst, application consulting, reporting, and digital process roles.",
       formTitle: "Contact Form",
       name: "Name",
       email: "Email",
       message: "Message",
       emailPlaceholder: "Business email",
-      messagePlaceholder: "Tell me about your role, project, or consulting need.",
+      messagePlaceholder: "Tell me about your role, project, reporting need, or digital workflow challenge.",
       send: "Send Inquiry",
       sending: "Sending...",
       success: "Inquiry sent. I will review it on email.",
@@ -331,31 +375,31 @@ const copy: Record<Locale, Copy> = {
       education: "Ausbildung",
       contact: "Kontakt",
     },
-    heroMetaLeft: "Season 04 / München / Deutschland",
-    heroMetaRight: "KI Systeme / Finance / Trade",
+    heroMetaLeft: "Season 04 / Muenchen / Deutschland",
+    heroMetaRight: "Business Analyse / Jira / Reporting",
     heroDeck:
-      "Brutalistisches Portfolio für KI-Beratung, Business Analysis, Finance Strategy und internationale Handelsausführung.",
-    heroPrimary: "Archiv öffnen",
+      "Brutalistisches Portfolio fuer Business Analyse, digitale Prozessoptimierung, Jira/Confluence-Dokumentation, Reporting, Einkauf und internationale Koordination.",
+    heroPrimary: "Portfolio ansehen",
     heroSecondary: "Lebenslauf laden",
     manifestoLabel: "Manifesto",
     manifesto: [
-      "Ich entwickle AI-Workflow-Systeme für Teams, die schärferes Reporting, klarere operative Disziplin und mehr Sicherheit in kommerziellen Entscheidungen brauchen.",
-      "Die Arbeit bewegt sich zwischen finanzieller Klarheit und grenzüberschreitender Ausführung und übersetzt Ambiguität in messbare, belastbare Strukturen.",
+      "Ich unterstuetze Teams dabei, unklare Prozesse in strukturierte Workflows, nutzbares Reporting und praktische digitale Umsetzung zu verwandeln.",
+      "Mein Profil liegt zwischen Business Analyse, Prozessdokumentation, Stakeholder-Kommunikation und digitaler Tool-Adoption mit Jira, Confluence, Excel, Power BI und AI-Automation-Konzepten.",
     ],
-    categoryTitle: "AUSGEWÄHLTE ARBEIT",
+    categoryTitle: "AUSGEWAEHLTE ARBEIT",
     quickView: "Schnellansicht",
     portfolioEdition: "Portfolio Edition",
     editorialKicker: "Editorial Ledger",
-    editorialTitle: "GEORDNETES CHAOS FÜR KOMPLEXE OPERATIONEN",
+    editorialTitle: "BUSINESS ANALYSIS UND DIGITALISIERUNG FUER REALE PROZESSE",
     editorialBody:
-      "Die Portfolio-Arbeit basiert auf Beratungsdisziplin: Signal erkennen, Risiko quantifizieren und einen Workflow installieren, der täglichem Druck standhält.",
+      "Diese Arbeiten zeigen meinen Ansatz: Prozess verstehen, Anforderungen dokumentieren, Daten strukturieren, Reporting verbessern und digitale Workflows praktisch einfuehren.",
     ledger: [
-      "KI-Beratung",
+      "Jira / Confluence",
       "Business Analysis",
-      "Finance Strategy",
-      "Controlling",
-      "International Trade",
-      "Operations Design",
+      "Reporting",
+      "Einkauf",
+      "Internationale Koordination",
+      "AI Automation Concepts",
     ],
     experienceTitle: "Erfahrung",
     educationTitle: "Ausbildung",
@@ -363,13 +407,13 @@ const copy: Record<Locale, Copy> = {
       navigation: "Navigation",
       reach: "Kontakt",
       base: "Standort",
-      availability: "Verfügbar für Beratung, Analytics und trade-fokussierte Rollen.",
+      availability: "Verfuegbar fuer Business-Analyst-, Anwendungsberater-, Reporting- und Digitalisierungsrollen.",
       formTitle: "Kontaktformular",
       name: "Name",
       email: "E-Mail",
       message: "Nachricht",
       emailPlaceholder: "Business E-Mail",
-      messagePlaceholder: "Erzähl mir mehr über Rolle, Projekt oder Beratungsbedarf.",
+      messagePlaceholder: "Erzaehl mir mehr ueber Rolle, Projekt, Reporting-Bedarf oder digitalen Workflow.",
       send: "Anfrage senden",
       sending: "Wird gesendet...",
       success: "Anfrage gesendet. Ich erhalte sie per E-Mail.",
