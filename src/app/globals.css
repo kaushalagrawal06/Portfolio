@@ -1,31 +1,131 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Old-money palette — cream paper, forest ink, brass accent.
+     Semantic tokens below are remapped so the whole site inherits the
+     heritage theme; the raw --color-blue/cyan/orange names are kept only
+     so existing utility classes (text-blue, bg-cyan, …) resolve to the
+     new brass/forest values without a site-wide class rename. */
+  --color-bg: #F3EFE6;
+  --color-bg-alt: #EAE3D3;
+  --color-ink: #16261D;
+  --color-ink-2: #24382C;
+  --color-blue: #7E5E1A;
+  --color-cyan: #C9A24B;
+  --color-orange: #B08D3C;
+  --color-muted: #5F5B4C;
+  --color-border: #DBD3C0;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Old-money accents (used by the hero / heritage sections) */
+  --color-cream: #F3EFE6;
+  --color-forest: #1E3A2F;
+  --color-forest-deep: #142A21;
+  --color-brass: #B08D3C;
+  --color-brass-light: #C9A24B;
+
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-glow-pulse: glow-pulse 7s ease-in-out infinite;
+  --animate-glow-pulse-slow: glow-pulse 10s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes glow-pulse {
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.08);
+    }
   }
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 96px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-blue);
+  color: white;
+}
+
+.bg-grid-faint {
+  background-image:
+    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(var(--color-border) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-grid-faint-dark {
+  background-image:
+    linear-gradient(to right, rgba(247, 247, 242, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(247, 247, 242, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Old-money helpers */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Fine engraved-looking texture for cream panels */
+.bg-paper-grain {
+  background-image: radial-gradient(rgba(30, 58, 47, 0.05) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* Subtle brass double-rule divider */
+.brass-rule {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-brass) 20%,
+    var(--color-brass) 80%,
+    transparent
+  );
 }

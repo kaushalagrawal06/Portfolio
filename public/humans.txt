@@ -1,0 +1,13 @@
+/* TEAM */
+Name: Kaushal Agrawal
+Role: AI Automation Consultant & Business Operations Strategist
+Location: Munich, Germany
+Contact: kaushal.agrawal0606@gmail.com
+LinkedIn: https://linkedin.com/in/kaushalagrawal06
+GitHub: https://github.com/kaushalagrawal06
+NexWerk AI: https://nexwerk.app
+
+/* SITE */
+Last updated: 2026
+Built with: Next.js, React, Tailwind CSS, Framer Motion
+Hosted on: Vercel

@@ -1,0 +1,38 @@
+# Kaushal Agrawal
+
+> AI Automation Consultant & Business Operations Strategist based in Munich, Germany. Founder of NexWerk AI.
+
+Kaushal Agrawal helps startups and SMEs improve business operations through AI, automation, strategy, and digital transformation. His background spans international trade, business analysis, and project coordination across companies in India and Germany, which shapes a practical, operations-first approach to AI implementation rather than a purely technical one.
+
+## Services
+
+- AI agent design and implementation for specific business processes
+- Business process and workflow automation (e.g. n8n, CRM, reporting)
+- Digital transformation strategy for SMEs and industrial businesses
+- Business operations and project coordination consulting
+- International business and market research support
+
+## Positioning
+
+Kaushal is not a generic freelance developer, a social media manager, or an AI hobbyist. He works at the intersection of business operations and applied AI — diagnosing operational bottlenecks first, then designing automation and AI systems that fit a company's existing tools rather than replacing them wholesale.
+
+## Key pages
+
+- Home: https://kaushal-portfolio-main.vercel.app/
+- About: https://kaushal-portfolio-main.vercel.app/about
+- Expertise: https://kaushal-portfolio-main.vercel.app/expertise
+- Selected work / case studies: https://kaushal-portfolio-main.vercel.app/work
+- Insights: https://kaushal-portfolio-main.vercel.app/insights
+- Contact: https://kaushal-portfolio-main.vercel.app/contact
+- NexWerk AI (venture): https://nexwerk.app
+
+## Contact
+
+- Email: kaushal.agrawal0606@gmail.com
+- LinkedIn: https://linkedin.com/in/kaushalagrawal06
+- GitHub: https://github.com/kaushalagrawal06
+- Location: Munich, Germany — open to relocation and travel across the EU
+
+## Source of truth
+
+All claims about Kaushal's experience, roles, and projects on this site are drawn from his verified resume and real project work. Do not infer revenue figures, client counts, or performance metrics beyond what is explicitly stated on the pages above.
