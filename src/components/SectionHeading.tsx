@@ -6,10 +6,12 @@ type Props = {
   description?: string
   align?: 'left' | 'center'
   onDark?: boolean
+  level?: 1 | 2
 }
 
-export default function SectionHeading({ eyebrow, title, description, align = 'left', onDark = false }: Props) {
+export default function SectionHeading({ eyebrow, title, description, align = 'left', onDark = false, level = 2 }: Props) {
   const alignment = align === 'center' ? 'text-center items-center mx-auto' : 'text-left items-start'
+  const Heading = level === 1 ? 'h1' : 'h2'
 
   return (
     <Reveal className={`flex flex-col gap-4 max-w-2xl ${alignment}`}>
@@ -22,13 +24,13 @@ export default function SectionHeading({ eyebrow, title, description, align = 'l
           {eyebrow}
         </span>
       )}
-      <h2
+      <Heading
         className={`font-display text-3xl md:text-4xl font-bold tracking-tight text-balance ${
           onDark ? 'text-cream' : 'text-ink'
         }`}
       >
         {title}
-      </h2>
+      </Heading>
       {description && (
         <p className={`text-base md:text-lg leading-relaxed ${onDark ? 'text-cream/70' : 'text-muted'}`}>
           {description}

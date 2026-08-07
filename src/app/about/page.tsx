@@ -32,7 +32,7 @@ export default function AboutPage() {
         </Reveal>
 
         <div className="flex flex-col gap-8">
-          <SectionHeading eyebrow="About" title="I work at the intersection of business operations and applied AI." />
+          <SectionHeading level={1} eyebrow="About" title="I work at the intersection of business operations and applied AI." />
 
           <div className="flex flex-col gap-4 text-base text-ink/80 leading-relaxed">
             <p>

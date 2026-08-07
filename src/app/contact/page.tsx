@@ -55,6 +55,7 @@ export default function ContactPage() {
       <BreadcrumbJsonLd items={[{ name: 'Contact', href: '/contact' }]} />
       <section className="max-w-3xl mx-auto px-6">
         <SectionHeading
+          level={1}
           eyebrow="Contact"
           title="Let's talk about your operations, hiring needs, or a potential partnership."
           description="Whether you're hiring, evaluating a consulting engagement, or exploring a collaboration with NexWerk AI — reach out directly."

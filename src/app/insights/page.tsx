@@ -17,6 +17,7 @@ export default function InsightsPage() {
       <BreadcrumbJsonLd items={[{ name: 'Insights', href: '/insights' }]} />
       <section className="max-w-3xl mx-auto px-6">
         <SectionHeading
+          level={1}
           eyebrow="Insights"
           title="Practitioner notes on AI automation and business operations"
           description="Short, specific write-ups grounded in real engagements — not general commentary."

@@ -20,6 +20,7 @@ export default function DemosPage() {
 
       <section className="max-w-6xl mx-auto px-6">
         <SectionHeading
+          level={1}
           eyebrow="Website Demos"
           title="Sample websites I can build for your business"
           description="Explore live demo sites across different industries. Each one is a real, working example — designed to convert, and wired with the kind of AI automation that runs the busywork behind it. Find the one closest to your business, then let’s build yours."

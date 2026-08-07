@@ -17,6 +17,7 @@ export default function WorkPage() {
       <BreadcrumbJsonLd items={[{ name: 'Work', href: '/work' }]} />
       <section className="max-w-6xl mx-auto px-6">
         <SectionHeading
+          level={1}
           eyebrow="Selected Work"
           title="Systems I've built and businesses I've helped run better"
           description="A mix of founder-led work at NexWerk AI, client-facing digital transformation, and internal automation and coordination projects."

@@ -18,6 +18,7 @@ export default function ExpertisePage() {
       <BreadcrumbJsonLd items={[{ name: 'Expertise', href: '/expertise' }]} />
       <section className="max-w-6xl mx-auto px-6">
         <SectionHeading
+          level={1}
           eyebrow="Expertise"
           title="Six areas where I create the most business value"
           description="Each grounded in real operating experience — not a generic services menu."

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: `%s — ${profile.name}`,
   },
   description:
-    "Kaushal Agrawal helps companies scale through AI automation, business operations, strategy, and digital transformation. Based in Munich, Germany. Founder of NexWerk AI.",
+    "Kaushal Agrawal helps SMEs scale with AI automation, business operations and digital transformation. Based in Munich; founder of NexWerk AI.",
   keywords: [
     "AI Automation Consultant Germany",
     "AI Consultant Munich",
@@ -85,6 +85,13 @@ export default function RootLayout({
     },
     sameAs: [profile.linkedin, profile.github, profile.nexwerk],
     knowsLanguage: profile.languages.map((l) => l.name),
+    knowsAbout: [
+      "AI automation",
+      "Business process automation",
+      "Business operations",
+      "Digital transformation",
+      "n8n workflow automation",
+    ],
   };
 
   const organizationJsonLd = {
